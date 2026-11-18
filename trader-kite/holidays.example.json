@@ -1,0 +1,4 @@
+{
+  "_comment": "Copy to trader/holidays.json. Add NSE's trading holidays (equity + equity derivatives) for any year this pack does not know yet, from NSE's holiday circular. Weekdays only; weekends are closed anyway.",
+  "2027": ["2027-01-26"]
+}

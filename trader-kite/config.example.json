@@ -1,0 +1,30 @@
+{
+  "_comment": "Copy to trader/config.json in your project and edit. Rupees. Times are IST. Never put an api_secret or access token here.",
+  "capital": 300000,
+  "max_loss_per_trade": 2000,
+  "daily_loss_limit": 6000,
+  "max_trades_per_day": 4,
+  "min_reward_risk": 1.5,
+  "min_reward_risk_credit": 0.3,
+  "cash_buffer_pct": 10,
+  "max_lots": {"index": 2, "stock": 1},
+  "max_quantity": null,
+  "max_notional": null,
+  "no_entries_before": "09:30",
+  "no_entries_after": "14:30",
+  "flat_by": {"equity": "15:00", "future": "15:15", "option": "15:15"},
+  "product": {"equity": "MIS", "future": "MIS", "option": "MIS"},
+  "allow": {
+    "short_equity": true,
+    "futures": true,
+    "option_buying": true,
+    "option_selling": true,
+    "naked_short_options": false
+  },
+  "no_new_shorts_on_expiry_day": true,
+  "size_spreads_by": "max_loss",
+  "sl_limit_buffer_pct": {"equity": 0.5, "future": 0.1, "option": 2.0},
+  "respect_fo_ban": true,
+  "blocked": [],
+  "risk_free_rate": 0.065
+}

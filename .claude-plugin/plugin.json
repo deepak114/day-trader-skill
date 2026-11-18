@@ -1,7 +1,7 @@
 {
-  "name": "day-trader-skill",
-  "description": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
-  "version": "2.0.0",
+  "name": "day-trader-skill-india",
+  "description": "14 Claude skills for NSE equity, futures and options with Zerodha Kite: scanner, news, Moneycontrol ideas, entry timer, exit planner, options strategist, time machine, budget, risk, order tickets you place yourself, alerts, results analyst, deals tracker.",
+  "version": "1.0.0-india",
   "author": {
     "name": "Jake Schincariol",
     "url": "https://opusjake.ai"
@@ -13,10 +13,12 @@
     "claude-code",
     "claude-skills",
     "day-trading",
-    "stock-market",
-    "backtesting",
-    "opening-range-breakout",
-    "paper-trading"
+    "nse",
+    "zerodha",
+    "kite-connect",
+    "options",
+    "futures",
+    "india"
   ],
   "skills": "./"
 }
