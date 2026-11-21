@@ -52,8 +52,9 @@ TAGS = [
     ("order win", r"\b(order (win|worth|from)|bags? (an? )?order|contract (worth|from|win)|wins? (an? )?order|"
                   r"letter of award|loa\b)"),
     ("deal/stake", r"\b(acqui(re|sition)|merger|demerger|stake|takeover|joint venture|jv\b|divest)"),
-    ("analyst", r"\b(target price|upgrade|downgrade|buy rating|sell rating|overweight|underweight|initiat|"
-                r"brokerage|neutral)"),
+    ("analyst", r"\b(target price|price target|upgrade|downgrade|buy rating|sell rating|overweight|underweight|"
+                r"initiat|brokerage|neutral|target (of )?(rs\.?|inr|₹)\s?\d|"
+                r"(buy|sell|accumulate|add|reduce|hold)\b[^.|]{0,60}\btarget\b)"),
     ("regulatory", r"\b(sebi|rbi|nclt|cci\b|trai|dgca|usfda|fda|licen[cs]e|approval|ban\b|penalty|gst)"),
     ("management", r"\b(ceo|md\b|managing director|cfo|chairman|resign|appoint|steps down)"),
     ("promoter/pledge", r"\b(promoter|pledge|insider)"),

@@ -426,6 +426,16 @@ class NewsDeals(unittest.TestCase):
         self.assertIn("results", items[0]["tags"])
         self.assertTrue(items[0]["time"].startswith("2026-11-18T10:00"))
 
+    def test_broker_calls_are_analyst(self):
+        for title in ("Buy Poonawalla Fincorp; target of Rs 600: Motilal Oswal - TradingView",
+                      "Buy Poonawalla Fincorp Ltd For Target Rs.600 by Motilal Oswal Financial Services Ltd",
+                      "Accumulate Emami, price target ₹450: ICICI Securities",
+                      "Kotak cuts SBI target price to Rs 1,100"):
+            it = news.tag({"symbol": "X", "kind": "headline", "title": title}, {})
+            self.assertIn("analyst", it["tags"], title)
+        it = news.tag({"symbol": "X", "kind": "headline", "title": "Lemon Tree Hotels opens 98-villa resort"}, {})
+        self.assertNotIn("analyst", it["tags"])
+
     def test_deals(self):
         rows = deals.parse(self.CSV, "block")
         self.assertEqual(rows[0]["symbol"], "GROWW")
